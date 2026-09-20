@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Nur'Aini Dwi Novianti Ismail, mahasiswa Sistem Informasi yang tertarik pada frontend development, UI/UX, dan creative technology.">
+  <meta name="theme-color" content="#050b18">
+  <title>Nuraa — Frontend & Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="aurora aurora-one" aria-hidden="true"></div>
+  <div class="aurora aurora-two" aria-hidden="true"></div>
+
+  <header class="floating-nav" id="nav">
+    <a class="mini-brand" href="#home" aria-label="Beranda Nuraa">N<span>✦</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="menu-button" id="menuButton" aria-label="Buka menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="kicker"><span></span> INFORMATION SYSTEMS STUDENT</p>
+        <h1>Turning curiosity<br>into <span class="gradient-text">digital experiences.</span></h1>
+        <p class="role-line"><span id="typingText">Frontend Explorer</span><i></i></p>
+        <p class="hero-intro">Hi, I'm Nuraa. I enjoy learning how thoughtful interfaces, clear structure, and small interactions can turn an idea into something people can actually use.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#portfolio">View Projects <span>↗</span></a>
+        </div>
+        <div class="hero-socials">
+          <span>FIND ME</span>
+          <a href="https://github.com/sa4turn" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a href="https://instagram.com/nuraism_" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="status-pill"><span></span> Open to learn & collaborate</div>
+        <div class="portrait-shell">
+          <img src="assets/nuraa-profile.webp" alt="Nur'Aini Dwi Novianti Ismail mengenakan almamater Universitas Multimedia Nusantara">
+          <div class="portrait-caption"><small>BASED IN</small><strong>Gading Serpong, Tangerang</strong></div>
+        </div>
+        <div class="floating-card code-card"><span>&lt;/&gt;</span><p>Frontend<br><b>in progress</b></p></div>
+        <div class="floating-card idea-card"><span>✦</span><p>Curious mind<br><b>thoughtful work</b></p></div>
+      </div>
+      <a class="scroll-down" href="#about"><span>SCROLL TO EXPLORE</span>↓</a>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-heading reveal"><span>01</span><p>ABOUT ME</p></div>
+      <div class="about-intro">
+        <div class="about-title reveal">
+          <p>Hi, I'm</p>
+          <h2>Nur'Aini Dwi<br><span>Novianti Ismail.</span></h2>
+        </div>
+        <div class="about-story reveal delay-1">
+          <p class="lead">Mahasiswa Sistem Informasi Universitas Multimedia Nusantara yang sedang mendalami frontend development, UI/UX, dan creative technology.</p>
+          <p>Saya aktif dalam organisasi mahasiswa dan terbiasa mengoordinasikan kebutuhan kegiatan, bekerja secara terstruktur, teliti, serta bertanggung jawab. Saya senang mempelajari hal baru dan berkolaborasi untuk menghasilkan solusi digital yang berguna.</p>
+          <div class="about-tags"><span>Structured</span><span>Adaptive</span><span>Collaborative</span><span>Curious</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-grid">
+        <div class="timeline-column reveal">
+          <h3>Education</h3>
+          <article class="timeline-card featured">
+            <div class="timeline-icon">UMN</div>
+            <div><h4>Universitas Multimedia Nusantara</h4><p>Sistem Informasi</p><time>2024 — Present</time></div>
+          </article>
+          <article class="timeline-card">
+            <div class="timeline-icon soft">01</div>
+            <div><h4>SMA Negeri 1 Raja Ampat</h4><p>Ilmu Pengetahuan Sosial</p><time>Graduated 2024</time></div>
+          </article>
+        </div>
+
+        <div class="timeline-column reveal delay-1">
+          <h3>Experience</h3>
+          <div class="experience-list">
+            <article class="timeline-card"><div class="timeline-icon purple">TV</div><div><h4>Divisi Publikasi — UMN TV</h4><p>Social media content & publication timeline</p><time>2025 — Present</time></div></article>
+            <article class="timeline-card"><div class="timeline-icon purple">D</div><div><h4>Divisi Funding — DISCO XIII</h4><p>Financial records, paid promotion & sponsorship</p><time>2025 — Present</time></div></article>
+            <article class="timeline-card"><div class="timeline-icon purple">S</div><div><h4>Volunteer — Social Is Me</h4><p>PIC for 7 students in an EcoBrick project</p><time>2025</time></div></article>
+            <article class="timeline-card"><div class="timeline-icon purple">M</div><div><h4>Divisi Perlengkapan — MAXIMA</h4><p>Logistics for three major event series</p><time>2024 — 2025</time></div></article>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div><strong>9</strong><span>Selected Projects</span></div>
+        <div><strong>4</strong><span>Organization Roles</span></div>
+        <div><strong>3</strong><span>Awards</span></div>
+        <div><strong>∞</strong><span>Things to Learn</span></div>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+      <div class="section-heading reveal"><span>02</span><p>SELECTED WORK</p></div>
+      <div class="portfolio-title reveal"><h2>Projects & <span class="gradient-text">progress.</span></h2><p>A collection of coursework, frontend experiments, UI/UX prototypes, and creative effects that show how I learn by building.</p></div>
+
+      <div class="tabs reveal" role="tablist" aria-label="Kategori portofolio">
+        <button class="tab active" data-tab="projects" role="tab" aria-selected="true">Projects <small>9</small></button>
+        <button class="tab" data-tab="skills" role="tab" aria-selected="false">Tech Stack</button>
+        <button class="tab" data-tab="awards" role="tab" aria-selected="false">Awards</button>
+      </div>
+
+      <div class="tab-panel active" id="projectsPanel" data-panel="projects">
+        <div class="projects-grid">
+          <article class="project-card featured-project reveal" data-project="posiufo">
+            <div class="project-cover posiufo-cover"><span class="project-index">01</span><div class="posiufo-logo">POSI<span>UFO</span><small>unique & creative products</small></div><div class="cover-chips"><span>STORE</span><span>CART</span><span>SEARCH</span></div></div>
+            <div class="project-content"><div class="project-tags"><span>Frontend</span><span>Academic</span></div><h3>POSIUFO Store</h3><p>Website toko produk kreatif dengan katalog, pencarian, kategori produk, dan keranjang belanja berbasis local storage.</p><div class="project-footer"><small>HTML · CSS · JavaScript</small><button data-open-project="posiufo" aria-label="Detail POSIUFO">Details ↗</button></div></div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-project="relonsApp">
+            <div class="project-cover relons-cover"><span class="project-index">02</span><div class="relons-logo"><b>R</b><div>RELONS<small>Report. Educate. Support.</small></div></div><div class="shield">♡</div></div>
+            <div class="project-content"><div class="project-tags"><span>UX Prototype</span><span>Coursework</span></div><h3>RELONS Mobile Prototype</h3><p>Prototype aplikasi pelaporan bullying untuk mahasiswa, dikembangkan dari riset pengguna dan studi aplikasi pembanding.</p><div class="project-footer"><small>Lovable · UX Research</small><button data-open-project="relonsApp" aria-label="Detail RELONS Mobile Prototype">Details ↗</button></div></div>
+          </article>
+
+          <article class="project-card reveal" data-project="relonsWeb">
+            <div class="project-cover relons-web-cover"><span class="project-index">03</span><div class="browser-mock"><i></i><i></i><i></i><strong>RELONS</strong><span>Report safely. Track clearly.</span></div></div>
+            <div class="project-content"><div class="project-tags"><span>Frontend</span><span>Database Design</span></div><h3>RELONS Website</h3><p>Website pelaporan bullying berbasis Laravel dengan autentikasi, pelaporan, unggah bukti, forum, edukasi, dan tracking.</p><div class="project-footer"><small>HTML · Laravel · MySQL</small><button data-open-project="relonsWeb" aria-label="Detail RELONS Website">Details ↗</button></div></div>
+          </article>
+
+          <article class="project-card reveal" data-project="melonku">
+            <div class="project-cover image-cover"><img src="assets/melonku.webp" alt="Presentasi proyek MelonKu"><span class="project-index">04</span></div>
+            <div class="project-content"><div class="project-tags"><span>UI/UX</span><span>Team Project</span></div><h3>MelonKu</h3><p>Prototype aplikasi mobile untuk mendeteksi kematangan buah melon dan kondisi tanaman dengan konsep computer vision.</p><div class="project-footer"><small>Figma · Canva</small><button data-open-project="melonku" aria-label="Detail MelonKu">Details ↗</button></div></div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-project="amalia">
+            <div class="project-cover image-cover"><img src="assets/toko-amalia.webp" alt="Prototype Sistem Informasi Penjualan Toko Amalia"><span class="project-index">05</span></div>
+            <div class="project-content"><div class="project-tags"><span>Web System</span><span>Semester 2</span></div><h3>Toko Amalia</h3><p>Sistem informasi penjualan yang pernah berfungsi untuk membantu pengelolaan produk, pemasok, transaksi, dan penjualan.</p><div class="project-footer"><small>Figma · Web Development</small><button data-open-project="amalia" aria-label="Detail Toko Amalia">Details ↗</button></div></div>
+          </article>
+
+          <article class="project-card reveal" data-project="prisma">
+            <div class="project-cover prisma-cover"><span class="project-index">06</span><div class="editor-frame"><span>PRISMA UNHAS</span><strong>Social Media<br>Video Editing</strong><small>4 SELECTED REELS</small></div></div>
+            <div class="project-content"><div class="project-tags"><span>Content Editing</span><span>Instagram Reels</span></div><h3>PRISMA Unhas Content</h3><p>Mengolah materi menjadi empat konten video pendek yang komunikatif dan siap dipublikasikan di Instagram.</p><div class="project-footer"><small>Video Editing · Social Media</small><button data-open-project="prisma" aria-label="Detail PRISMA Unhas Content">Details ↗</button></div></div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-project="videoEditing">
+            <div class="project-cover editing-cover"><span class="project-index">07</span><div class="timeline-art"><b>VIDEO</b><span></span><span></span><span></span><small>CUT · MOTION · RHYTHM</small></div></div>
+            <div class="project-content"><div class="project-tags"><span>Video Editing</span><span>Personal Archive</span></div><h3>Motion Editing Archive</h3><p>Arsip eksplorasi editing yang berkembang dari Cute Cut Pro ke Alight Motion dan Video Star.</p><div class="project-footer"><small>CCP · Alight Motion · Video Star</small><button data-open-project="videoEditing" aria-label="Detail Motion Editing Archive">Details ↗</button></div></div>
+          </article>
+
+          <article class="project-card reveal" data-project="etika">
+            <div class="project-cover image-cover"><img src="assets/etika-filter.webp" alt="Filter Instagram ETIKA 2021"><span class="project-index">08</span></div>
+            <div class="project-content"><div class="project-tags"><span>AR Filter</span><span>Creative Tech</span></div><h3>ETIKA 2021 Filter</h3><p>Filter Instagram untuk identitas visual acara ETIKA 2021 Universitas Islam Indonesia yang digunakan oleh lebih dari 50 peserta.</p><div class="project-footer"><small>Spark AR Studio</small><button data-open-project="etika" aria-label="Detail ETIKA Filter">Details ↗</button></div></div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-project="tiktok">
+            <div class="project-cover image-cover"><img src="assets/tiktok-effects.webp" alt="Koleksi TikTok Effects milik Nuraa"><span class="project-index">09</span></div>
+            <div class="project-content"><div class="project-tags"><span>Effects</span><span>Personal</span></div><h3>TikTok Effect Collection</h3><p>Kumpulan efek visual dan interaktif yang dipublikasikan melalui TikTok Effect House dan digunakan dalam video pengguna.</p><div class="project-footer"><small>Effect House</small><button data-open-project="tiktok" aria-label="Detail TikTok Effects">Details ↗</button></div></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="skillsPanel" data-panel="skills" hidden>
+        <div class="skills-grid">
+          <div class="skill-group"><p>FRONTEND FOUNDATION</p><h3>HTML</h3><span>Basic</span><div class="meter"><i style="--value:55%"></i></div></div>
+          <div class="skill-group"><p>FRONTEND FOUNDATION</p><h3>CSS</h3><span>Basic</span><div class="meter"><i style="--value:55%"></i></div></div>
+          <div class="skill-group"><p>PROGRAMMING</p><h3>JavaScript</h3><span>Basic</span><div class="meter"><i style="--value:42%"></i></div></div>
+          <div class="skill-group"><p>DESIGN</p><h3>Figma</h3><span>Basic — Intermediate</span><div class="meter"><i style="--value:68%"></i></div></div>
+          <div class="skill-group"><p>CREATIVE</p><h3>Canva</h3><span>Intermediate</span><div class="meter"><i style="--value:78%"></i></div></div>
+          <div class="skill-group"><p>VERSION CONTROL</p><h3>Git & GitHub</h3><span>Basic</span><div class="meter"><i style="--value:40%"></i></div></div>
+          <div class="tool-cloud"><span>VS Code</span><span>Lovable</span><span>Visual Studio</span><span>Effect House</span><span>Spark AR Studio</span><span>Alight Motion</span><span>Video Star</span><span>Cute Cut Pro</span><span>GitHub Pages</span><span>Microsoft Office</span></div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="awardsPanel" data-panel="awards" hidden>
+        <div class="awards-grid">
+          <article><span>01</span><div><p>ACADEMIC ACHIEVEMENT</p><h3>Juara 1 Lulusan Terbaik</h3><small>Nilai tertinggi, Jurusan IPS — SMA Negeri 1 Raja Ampat · 2024</small></div></article>
+          <article><span>02</span><div><p>SCIENCE COMPETITION</p><h3>Juara 3 Kompetisi Sains Nasional</h3><small>Bidang Ekonomi, Tingkat Sekolah · Maret 2022</small></div></article>
+          <article><span>03</span><div><p>SCIENCE OLYMPIAD</p><h3>Finalis Olimpiade Sains Nasional</h3><small>Bidang Ekonomi, Tingkat Kabupaten · April 2023</small></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-visual" aria-hidden="true"><span>LET'S</span><strong>BUILD</strong><span>TOGETHER</span></div>
+      <div class="contact-content reveal">
+        <p class="kicker"><span></span> HAVE AN IDEA OR OPPORTUNITY?</p>
+        <h2>Let's make something<br><span class="gradient-text">useful together.</span></h2>
+        <p>Saya terbuka untuk kesempatan belajar, kolaborasi proyek, dan pengalaman yang membantu saya berkembang di bidang frontend.</p>
+        <a class="email" href="mailto:nur25112005@gmail.com">nur25112005@gmail.com <b>↗</b></a>
+        <div class="contact-links"><a href="https://github.com/sa4turn" target="_blank" rel="noopener">GitHub ↗</a><a href="https://instagram.com/nuraism_" target="_blank" rel="noopener">Instagram ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a href="#home" class="footer-brand">NURAA<span>✦</span></a><p>Designed with curiosity. Built while learning.</p><p>© <span id="year"></span> Nur'Aini</p></footer>
+
+  <div class="project-modal" id="projectModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close-modal aria-label="Tutup detail">×</button>
+      <div class="modal-number" id="modalNumber"></div>
+      <div class="modal-tags" id="modalTags"></div>
+      <h2 id="modalTitle"></h2>
+      <p class="modal-description" id="modalDescription"></p>
+      <div class="modal-grid"><div><small>ROLE</small><strong id="modalRole"></strong></div><div><small>TOOLS</small><strong id="modalTools"></strong></div><div><small>TYPE</small><strong id="modalType"></strong></div></div>
+      <h3>Highlights</h3><ul id="modalHighlights"></ul>
+      <div class="modal-note" id="modalNote"></div>
+      <div class="modal-actions" id="modalActions"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
